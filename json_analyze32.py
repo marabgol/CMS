@@ -239,7 +239,7 @@ def exclude_dead_pilot(pilot_b):
             for i in range(j+1,len(pilot_and_retiretime_sorted)):
                 delta_time = pilot_and_retiretime_sorted[i][1] - pilot_and_retiretime_sorted[j][1]
                 ##################### here is arbitrary numberts 5 and 40 could be very important 
-                if delta_time < 5*3600 and pilot_number[pilot_and_retiretime_sorted[i][0]] > 40:          # 10 hours
+                if delta_time < 5*3600 and pilot_number[pilot_and_retiretime_sorted[i][0]] > 3:          # 10 hours
                     selected_pilot[count].append( pilot_and_retiretime_sorted[i][0])
             count += 1
     #print("I am at selected pilot:  ",selected_pilot,"\n") 
